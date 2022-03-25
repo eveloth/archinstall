@@ -5,7 +5,8 @@ hwclock --systohc
 sed -i -e '178s/.//' -e '404s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-echo "KEYMAP=ruwin_alt_sh-UTF-8" >> /etc/vconsole.conf
+echo 'KEYMAP="ruwin_alt_sh-UTF-8"' >> /etc/vconsole.conf
+echo 'FONT="ter-v20n"' >> /etc/vconsole.conf
 echo "altair" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
