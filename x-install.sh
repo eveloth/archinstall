@@ -19,7 +19,7 @@ makepkg -si
 sudo pacman -S xorg sddm plasma plasma-wayland-session kde-applications firefox simplescreenrecorder obs-studio vlc kdenlive steam obsidian telegram-desktop alacritty kitty discord qbittorrent zsh filelight spectacle
 sudo pacman -S xmonad-contrib picom nitrogen dmenu xmobar qutebrowser
 
-yay audiorelay
+yay -S snap-pac-grub snapper-gui audiorelay
 
 sudo systemctl enable sddm
 /bin/echo -e "\e[1;32mREBOOTING IN 5..4..3..2..1..\e[0m"
